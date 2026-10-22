@@ -46,21 +46,6 @@ const projects = [
   },
   {
     index: '04',
-    title: 'Food delivery app',
-    status: 'In progress',
-    summary:
-      'I am building this in TypeScript. It has three sides: the customer placing an order, the restaurant managing incoming orders, and the rider tracking deliveries.',
-    highlights: [
-      'Separate dashboards for each role.',
-      'Live order tracking with Socket.io.',
-      'JWT auth across the React client and the Express API.',
-    ],
-    stack: ['TypeScript', 'React', 'Node.js', 'Express', 'MongoDB', 'Socket.io'],
-    live: null,
-    repo: 'https://github.com/Ndabenhle-Mthonti/SwiggyClone-App',
-  },
-  {
-    index: '05',
     title: 'Amazon clone',
     status: null,
     summary:
