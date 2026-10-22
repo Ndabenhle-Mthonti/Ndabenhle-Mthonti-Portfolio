@@ -1,6 +1,21 @@
 const projects = [
   {
     index: '01',
+    title: 'Lungisa',
+    status: null,
+    summary:
+      'A property maintenance app for a landlord, the tenants in those flats, and the tradespeople who fix the problems. A tenant reports an issue with a photo. The landlord assigns the matching trade. The provider says they are on the way, then finishes the job with a proof photo.',
+    highlights: [
+      'Nobody signs themselves up. The landlord invites each tenant to a flat and each provider to a trade, and each person lands on their own screen.',
+      'A tenant can send a finished job back with a short "Not fixed" note. The landlord can mark a job urgent, and can edit or remove a person so the next tenant can take that flat.',
+      'Privacy is enforced in Postgres with Row Level Security and triggers. A security-check script tests that blocked reads and writes stay blocked. The live app has no public sign-up; the GitHub README explains how to try all three roles locally.',
+    ],
+    stack: ['React', 'Supabase', 'PostgreSQL', 'TanStack Query', 'Vite'],
+    live: 'https://lungisa-nine.vercel.app',
+    repo: 'https://github.com/Ndabenhle-Mthonti/Lungisa',
+  },
+  {
+    index: '02',
     title: 'Optometry EMR',
     status: null,
     summary:
@@ -15,7 +30,7 @@ const projects = [
     repo: 'https://github.com/Ndabenhle-Mthonti/Optometry-EMR',
   },
   {
-    index: '02',
+    index: '03',
     title: 'Airbnb clone',
     status: null,
     summary:
@@ -30,7 +45,7 @@ const projects = [
     repo: 'https://github.com/Ndabenhle-Mthonti/AirBnB-clone',
   },
   {
-    index: '03',
+    index: '04',
     title: 'Food delivery app',
     status: 'In progress',
     summary:
@@ -45,7 +60,7 @@ const projects = [
     repo: 'https://github.com/Ndabenhle-Mthonti/SwiggyClone-App',
   },
   {
-    index: '04',
+    index: '05',
     title: 'Amazon clone',
     status: null,
     summary:
@@ -67,7 +82,7 @@ const skills = [
   },
   {
     title: 'Backend',
-    items: ['Node.js', 'Express', 'REST APIs', 'MongoDB / Mongoose', 'JWT & RBAC'],
+    items: ['Node.js', 'Express', 'Supabase', 'PostgreSQL', 'MongoDB / Mongoose', 'JWT & RBAC'],
   },
   {
     title: 'Tools',
@@ -132,7 +147,7 @@ export default function App() {
               </p>
               <p>
                 <span>Stack</span>
-                <strong>React · Node · MongoDB</strong>
+                <strong>React · Supabase · Node</strong>
               </p>
               <p>
                 <span>Looking for</span>
@@ -192,7 +207,7 @@ export default function App() {
           <div className="wrap">
             <div className="section-head">
               <h2>What I use</h2>
-              <p>Mainly the MERN stack, with TypeScript on newer work.</p>
+              <p>React on the frontend, with Node or Supabase behind it, and TypeScript on newer work.</p>
             </div>
             <div className="skills-grid">
               {skills.map((group) => (
@@ -221,8 +236,9 @@ export default function App() {
               <p>
                 I care about code I can explain. If a feature needs roles, an
                 audit trail, or tests, I would rather put that in from the start
-                than pretend the happy path is enough. That is why the EMR has
-                permission checks on the server, and why the tests run in CI.
+                than pretend the happy path is enough. That is why Lungisa
+                decides who can see a job in the database, and why the EMR has
+                permission checks on the server.
               </p>
               <p>
                 I am looking for a junior full-stack role in Johannesburg, Cape
@@ -235,7 +251,7 @@ export default function App() {
               <h3>Right now</h3>
               <ul>
                 <li>Studying AI Engineering at Zaio</li>
-                <li>Building the food delivery app in TypeScript</li>
+                <li>Lungisa, a property maintenance app, is on GitHub and live</li>
                 <li>Open to Johannesburg, Cape Town, and Durban</li>
               </ul>
             </div>
