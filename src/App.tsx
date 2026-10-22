@@ -71,7 +71,7 @@ const skills = [
   },
   {
     title: 'Tools',
-    items: ['Git / GitHub', 'Jest / Supertest', 'GitHub Actions', 'Vercel / Render', 'Postman'],
+    items: ['Git / GitHub', 'Cursor', 'Jest / Supertest', 'GitHub Actions', 'Vercel / Render', 'Postman'],
   },
 ]
 
